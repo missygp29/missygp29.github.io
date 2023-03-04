@@ -1,3 +1,8 @@
+header {
+    display:flex
+}
+/* Here I want to do a class specifically for just the header for the css*/
+
 body {
     font-family:'Courier New', Courier, monospace;
 }
