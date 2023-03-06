@@ -1,0 +1,72 @@
+header {
+    display:flex
+}
+/* Here I want to do a class specifically for just the header for the css*/
+
+* {
+    box-sizing: border-box;
+  }
+
+/* header home logo styling */
+#home-logo {
+
+}
+/* Header Nav-Bar Styling */
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:center;
+    align-items: center;
+    /* may want to consider making the gap wider*/
+    gap: 20px;
+
+}
+
+
+.page-title {
+    text-align:center;
+    margin: 32px;
+    border:4px solid navy;
+    max-width:800px;
+}
+/* Body Styling Basics */
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-color: #b0c4de;
+    margin:0;
+}
+
+h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* home page flex-box style */
+.page-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 16px;
+
+}
+
+/* Image code to consider when think
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius:10px; [FOR SMOOTHING CORNERS]
+}
+.gallery::after {
+  content: "";
+  width:350px; [IF THERE ARE GOING TO BE FIVE and want it to push over]
+}
+
+*/
