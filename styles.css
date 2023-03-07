@@ -9,20 +9,30 @@ header {
 
 /* header home logo styling */
 #home-logo {
-
+    color:cornflowerblue;
+    font-weight:bold;
+    font-size: larger;
+    float: left;
+    padding: 5px
+/*need to call in fonts for this? re-read how to do that*/
 }
 /* Header Nav-Bar Styling */
 .nav-bar {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content:center;
-    align-items: center;
+    justify-content:flex-end;
+    align-items: space-evenly;
     /* may want to consider making the gap wider*/
     gap: 20px;
+    color: cornflowerblue;
+    font-weight:bold;
+    font-size:larger;
+    list-style:none;
+    padding: 10px;
+    margin-right: 0;
 
 }
-
 
 .page-title {
     text-align:center;
@@ -42,13 +52,44 @@ h1 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+p {
+    color: navy;
+    text-align: center;
+    max-width: 800px;
+    padding:5px
+}
+
+/* unvisited link */
+a:link {
+    color: navy;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: blueviolet;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: blueviolet;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blueviolet;
+  }
+
+  /*class for introductory paragraphs on each page*/
+
+   
 /* home page flex-box style */
 .page-gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 30rem 30rem;
+    /*
     justify-content:center;
-    align-items: center;
+    */
+    align-items: stretch;
     padding: 20px 10px;
     max-width: 1400px;
     margin: 0 auto;
@@ -56,14 +97,28 @@ h1 {
 
 }
 
-/* Image code to consider when think
-.gallery img {
+/* Image code to consider when think*/
+.page-gallery img {
   width: 100%;
-  max-width: 350px;
+  max-width: 300px;
   height: 300px;
   object-fit: cover;
-  border-radius:10px; [FOR SMOOTHING CORNERS]
+  border-radius:10px;
 }
+
+.fig-page-gallery {
+    align-items:center;
+    justify-content: center;
+    color:navy;
+    font-weight: bolder;
+    text-align: center;
+    position: absolute;
+    padding: 5px;
+    margin: 0;
+}
+/* put in something about the figure captions for main page */
+
+/*
 .gallery::after {
   content: "";
   width:350px; [IF THERE ARE GOING TO BE FIVE and want it to push over]
