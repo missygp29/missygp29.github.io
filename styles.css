@@ -7,38 +7,54 @@ header {
     box-sizing: border-box;
   }
 
-/* header home logo styling */
-#home-logo {
-    color:cornflowerblue;
-    font-weight:bold;
-    font-size: larger;
-    float: left;
-    padding: 5px
-/*need to call in fonts for this? re-read how to do that*/
+  /*call in fonts*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
 }
 /* Header Nav-Bar Styling */
-.nav-bar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content:flex-end;
-    align-items: space-evenly;
-    /* may want to consider making the gap wider*/
-    gap: 20px;
-    color: cornflowerblue;
-    font-weight:bold;
-    font-size:larger;
-    list-style:none;
-    padding: 10px;
-    margin-right: 0;
-
+nav {
+  background-color: cornflowerblue;
+  margin: 0;
+  overflow: hidden;
 }
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li a {
+  color: white;
+  background-color: navy;
+  display: block;
+  line-height: 3em;
+  padding: 1em 3em;
+  text-decoration: none;
+}
+nav ul li:first-child {
+  margin-right: auto;
+}
+nav ul li a.logo {
+  background-color: cornflowerblue;
+  font-weight:bold;
+}
+nav ul li a:hover {
+  background-color: blue;
+}
+
+/* Introduction styling needs to go here */
 
 .page-title {
     text-align:center;
     margin: 32px;
     border:4px solid navy;
-    max-width:800px;
+    max-width:900px;
 }
 /* Body Styling Basics */
 
@@ -61,22 +77,26 @@ p {
 
 /* unvisited link */
 a:link {
-    color: navy;
+    color: white;
+    text-decoration:none;
   }
   
   /* visited link */
   a:visited {
-    color: blueviolet;
+    color: white;
+    text-decoration:none;
   }
   
   /* mouse over link */
   a:hover {
     color: blueviolet;
+    text-decoration:none;
   }
   
   /* selected link */
   a:active {
-    color: blueviolet;
+    color: cornflowerblue;
+    text-decoration:none;
   }
 
   /*class for introductory paragraphs on each page*/
@@ -86,15 +106,12 @@ a:link {
 .page-gallery {
     display: grid;
     grid-template-columns: 30rem 30rem;
-    /*
-    justify-content:center;
-    */
+    grid-gap: 10px;
+   font-size:larger;
     align-items: stretch;
-    padding: 20px 10px;
+    padding: 10px 25px;
     max-width: 1400px;
     margin: 0 auto;
-    gap: 16px;
-
 }
 
 /* Image code to consider when think*/
@@ -106,16 +123,23 @@ a:link {
   border-radius:10px;
 }
 
+.page-gallery img:hover{
+  transform:scale(1.1)
+}
 .fig-page-gallery {
-    align-items:center;
-    justify-content: center;
+  display:flex;
+    flex-flow:column;
+    align-self:flex-start;
     color:navy;
     font-weight: bolder;
-    text-align: center;
-    position: absolute;
+    text-align:center;
+    font-size:80%;
     padding: 5px;
     margin: 0;
+    width:30vw;
 }
+
+
 /* put in something about the figure captions for main page */
 
 /*
@@ -125,3 +149,7 @@ a:link {
 }
 
 */
+
+footer {
+  display:flex;
+}
