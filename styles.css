@@ -153,3 +153,40 @@ a:link {
 footer {
   display:flex;
 }
+
+/* Table Styling */
+
+table {
+  border: 3px solid navy;
+  border-collapse: collapse;
+  color: navy;
+}
+
+tr {
+  background-color: steelblue;
+  
+}
+
+td, th {
+  padding: 0.5rem;
+  border: solid 1px white;
+  border-bottom: 1px solid navy;
+}
+
+th {
+  text-align: center;
+  color: white;
+  background-color: navy;
+  border: solid 1px white;
+}
+table caption {
+  font-weight: bold ;
+    text-align: center;
+  font-size: 2 rem;
+  padding: 1rem 0;
+  color: navy;
+}
+
+tbody tr:nth-child(even) {
+  background-color:rgba(35, 107, 142, 0.35);
+}
