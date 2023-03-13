@@ -105,6 +105,7 @@ body {
 
 h1 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align:center
 }
 
 p {
@@ -201,7 +202,11 @@ footer {
   color:red;
 }
 
-figure out why this isn't working*/ 
+figure out why this isn't working or the stuff below*/ 
+
+.introduction {
+  color:whitesmoke;
+}
 
 /* Table Styling */
 
@@ -240,7 +245,7 @@ tbody tr:nth-child(even) {
   background-color:rgba(35, 107, 142, 0.35);
 }
 
-/* Etymology Styling */
+/* Rabbithole Styling */
 
 .rabbithole-title {
   display: block;
@@ -257,4 +262,9 @@ tbody tr:nth-child(even) {
   margin-right: auto;
   width: 30%;
   padding:20px 10px;
+}
+
+.rabbithole-items {
+  display: flex;
+  flex-direction: column;
 }
