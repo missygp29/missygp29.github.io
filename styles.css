@@ -7,7 +7,7 @@ header {
     box-sizing: border-box;
   }
 
-  /*call in fonts*/
+  /*TKT call in fonts*/
 
 body {
   margin: 0;
@@ -16,40 +16,68 @@ body {
 }
 /* Header Nav-Bar Styling */
 
-.logo-image {
-  height:5em;
-  width: 5em;
+header {
+  display: flex;
+flex: none;
+justify-content: space-between;align-items: center;
+max-height: 100px;
+padding:0;
+margin: 0;
 }
 
-.logo-caption {
-  caption-side:block-end;
+#logo {
+  background-color: cornflowerblue;
+}
+/* in case I need to do this TKT
+.logo-figure {
+
+}
+*/
+
+.logo-image {
+  height:100px;
+  width: 100px;
+  display:inline;
 }
 
 nav {
-  background-color: cornflowerblue;
+  background-color: blue;
   margin: 0;
   overflow: hidden;
+  display:inline;
 }
+
+/*TKT figure out how to fix the height and alignemnt of the nav items*/
+
 nav ul {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content:flex-end;
+  align-items:center;
+  height:100px;
 }
+
 nav ul li {
   display: inline-block;
   list-style-type: none;
+  padding: 10px 10px 0;
+  align-items:center;
 }
 nav ul li a {
   color: white;
   background-color: blue;
-  display: block;
-  line-height: 3em;
-  padding: 1em 3em;
+  line-height: 1.6;
+  /*padding: 1em 1em;*/
   text-decoration: none;
 }
+
+/*
 nav ul li:first-child {
   margin-right: auto;
+  padding: 10px
 }
+*/
 
 nav ul li a.logo {
   background-color: cornflowerblue;
@@ -147,7 +175,7 @@ a:link {
     font-size:80%;
     padding: 5px;
     margin: 0;
-    width:30vw;
+    /*width:30vw;*/
 }
 
 
@@ -167,9 +195,13 @@ footer {
 
 /* Parsing Page Specifics*/
 
+/* TKT
 #parsing-page {
-  background-color:blue;
+  background-color:navy;
+  color:red;
 }
+
+figure out why this isn't working*/ 
 
 /* Table Styling */
 
@@ -206,4 +238,23 @@ table caption {
 
 tbody tr:nth-child(even) {
   background-color:rgba(35, 107, 142, 0.35);
+}
+
+/* Etymology Styling */
+
+.rabbithole-title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  font:bold;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.etymology-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  padding:20px 10px;
 }
