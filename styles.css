@@ -15,6 +15,16 @@ body {
   font-size: 15px;
 }
 /* Header Nav-Bar Styling */
+
+.logo-image {
+  height:5em;
+  width: 5em;
+}
+
+.logo-caption {
+  caption-side:block-end;
+}
+
 nav {
   background-color: cornflowerblue;
   margin: 0;
@@ -31,7 +41,7 @@ nav ul li {
 }
 nav ul li a {
   color: white;
-  background-color: navy;
+  background-color: blue;
   display: block;
   line-height: 3em;
   padding: 1em 3em;
@@ -40,12 +50,13 @@ nav ul li a {
 nav ul li:first-child {
   margin-right: auto;
 }
+
 nav ul li a.logo {
   background-color: cornflowerblue;
   font-weight:bold;
 }
 nav ul li a:hover {
-  background-color: blue;
+  background-color: navy;
 }
 
 /* Introduction styling needs to go here */
@@ -152,6 +163,12 @@ a:link {
 
 footer {
   display:flex;
+}
+
+/* Parsing Page Specifics*/
+
+#parsing-page {
+  background-color:blue;
 }
 
 /* Table Styling */
