@@ -4,7 +4,7 @@ header {
 /* Here I want to do a class specifically for just the header for the css*/
 
 * {
-    box-sizing: border-box;
+    box-sizing: content-box;
   }
 
   /*TKT call in fonts*/
@@ -19,7 +19,8 @@ body {
 header {
   display: flex;
 flex: none;
-justify-content: space-between;align-items: center;
+justify-content: space-between;
+align-items: center;
 max-height: 100px;
 padding:0;
 margin: 0;
@@ -61,14 +62,14 @@ nav ul {
 nav ul li {
   display: inline-block;
   list-style-type: none;
-  padding: 10px 10px 0;
+  padding: 5px 10px 10px 0;
   align-items:center;
 }
 nav ul li a {
   color: white;
   background-color: blue;
   line-height: 1.6;
-  /*padding: 1em 1em;*/
+  padding: 10px;
   text-decoration: none;
 }
 
@@ -87,6 +88,12 @@ nav ul li a:hover {
   background-color: navy;
 }
 
+.page-home {
+  background-color:whitesmoke;
+  padding:10px;
+  font-style:italic;
+  margin: auto;
+}
 /* Introduction styling needs to go here */
 
 .page-title {
@@ -94,7 +101,14 @@ nav ul li a:hover {
     margin: 32px;
     border:4px solid navy;
     max-width:900px;
+    color:whitesmoke;
 }
+
+.introductory-para {
+  color:whitesmoke;
+  text-align:center;
+}
+
 /* Body Styling Basics */
 
 body {
@@ -114,6 +128,19 @@ p {
     max-width: 800px;
     padding:5px
 }
+
+em {
+  font-style:italic;
+}
+
+h3 {
+  text-align:center;
+}
+
+/* also need to do: 
+<br>
+<h2> and <h3>
+*/
 
 /* unvisited link */
 a:link {
@@ -204,10 +231,6 @@ footer {
 
 figure out why this isn't working or the stuff below*/ 
 
-.introduction {
-  color:whitesmoke;
-}
-
 /* Table Styling */
 
 table {
@@ -267,4 +290,21 @@ tbody tr:nth-child(even) {
 .rabbithole-items {
   display: flex;
   flex-direction: column;
+  align-items:center;
 }
+
+.rabbithole-gallery {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.pronounce {
+  font-style: italic;
+  text-align:center;
+}
+
+/* Great Clues styling */
+
+/* Bonuses styling */

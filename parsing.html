@@ -10,11 +10,11 @@
 	    
       <header>
         <div id="logo">
-          <a href="index.html"><img class="logo-image" src="../images/crossword1.png"></a>
+          <a href="index.html"><img class="logo-image" src="../images/crossword1.png" alt="Image of a crossword with overwritten word Crosswording"></a>
         </div>
         <nav>
           <ul>
-            <li><a href="../parsing.html">Parsing</a>
+            <li class="page-home"><a href="../parsing.html">Parsing</a>
             </li>
             <li><a href="../rabbitholes.html">Rabbitholes</a>
             </li>
@@ -45,7 +45,8 @@
                 <thead>
                 <tr> 
                   <th scope="col">Type</th>
-                  <th scope="col">Cue Words</th>
+                  <th scope="col">Cue Words (examples)</th>
+                  <th scope="col">What to do</th>
                   <th scope="col">Examples</th>
               
                     
@@ -55,37 +56,38 @@
                 <tr>     
                   <!-- want to add in different shades for them - alternating? or can highlight w/ hover-->
                   <td>Anagrams</td>
-                  <td> </td>
-                  <td> </td>
+                  <td>failing; involving; breaking; </td>
+                  <td>Anagram the word(s) next to the cue word but be careful: this might be combined with other words that need anagrams or some other cue solving; it might also be minus one or more letters, depending on the other cue words.</td>
+                  <td></td>
                  <tr>
                   <td>Run-ons</td>
                    <td> </td>
                    <td> </td>
+                   <td></td>
                 </tr>
                 <tr>
                   <td>Cricket references</td>
                   <td> </td>
                   <td> </td>
+                  <td></td>
                   </tr>
                 </tbody>
-                <tfoot>
-                  <tr></tr>
-                </tfoot>
               </table>
     </div>
 	<div>
-	<h2>What is the answer to this clue?</h2>
+	 <p class="clue">What is the answer to this clue?</p>
 
-<input id="clue1" type="text" />
+<input id="clue1" type="text">
 
 <button id="button">Let's go!</button>
-<label id="label1">(answer is case sensitive)</label>
+<label id="label1">(user lower case - answer is case sensitive)</label>
 	    </div>
+      <footer>
+        <p>Author and Copyright: Grace Pickering, 2023</p>
+        <p><a href="mailto:gpickeri@pratt.edu">Contact</a></p>
+</footer>
     </body>
-    <footer>
-                <p>Author and Copyright: Grace Pickering, 2023</p>
-                <p><a href="mailto:gpickeri@pratt.edu">Contact</a></p>
-        </footer>
+    
 	<script src="main.js">    </script> 
     </html>
         </html>
