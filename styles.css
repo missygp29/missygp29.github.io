@@ -57,6 +57,7 @@ nav ul {
   justify-content:flex-end;
   align-items:center;
   height:100px;
+  font-family: 'Rakkas', cursive
 }
 
 nav ul li {
@@ -102,6 +103,8 @@ nav ul li a:hover {
     text-align:center;
     margin: 32px;
     border:4px solid navy;
+    background-color:cornflowerblue;
+    border-radius:10px;
     max-width:900px;
     color:whitesmoke;
 }
@@ -114,21 +117,32 @@ nav ul li a:hover {
 /* Body Styling Basics */
 
 body {
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Rakkas', cursive;
     background-color: #b0c4de;
     margin:0;
 }
 
 h1 {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-align:center
+  font-family: 'Euphoria Script', cursive;    
+  text-align:center;
+  font-size:40px;
 }
+
+h2 {
+  font-family: 'Euphoria Script', cursive;    
+  text-align:center;
+  font-size:30px;
+  padding:5px;
+}
+
 
 p {
     color: navy;
     text-align: center;
-    max-width: 800px;
-    padding:5px
+    max-width: 900px;
+    padding:5px;
+    font-family: 'Rakkas', cursive;
+    margin: 0 36px 36px;
 }
 
 em {
@@ -184,6 +198,9 @@ a:link {
     padding: 10px 25px;
     max-width: 1400px;
     margin: 0 auto;
+    font-family: 'Rakkas', cursive
+
+    
 }
 
 /* Image code to consider when think*/
@@ -243,6 +260,9 @@ table {
   border-collapse: collapse;
   color: navy;
   max-width:90%;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 tr {
@@ -273,6 +293,13 @@ table caption {
 tbody tr:nth-child(even) {
   background-color:rgba(35, 107, 142, 0.35);
 }
+
+.try-parsing {
+  padding-top:20px;
+  margin-bottom: 0;
+  text-align:center;
+}
+
 
 /* Rabbithole Styling */
 
@@ -313,12 +340,49 @@ tbody tr:nth-child(even) {
 
 /* Great Clues styling */
 
+.clue-gallery {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:stretch;
+  border-bottom: whitesmoke groove 1px;
+  line-width:900px;
+  padding:10px;
+}
+
+.clue-gallery button {
+  background-color: cornflowerblue;
+  border: none;
+  border-radius:5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  display:inline-flex;
+  font-family: 'Flamenco', cursive;
+}
+
+.clue-gallery input {
+  display:inline-flex;
+}
+
+.clue-gallery p {
+  margin-bottom:0;
+}
+
+
+
+
 /* Bonuses styling */
 
 .bonus-items {
   display:flex;
   flex-direction:column;
   align-items:center;
+  justify-content:center;
 
 }
 
