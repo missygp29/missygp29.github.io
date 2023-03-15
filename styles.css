@@ -51,13 +51,14 @@ nav {
 /*TKT figure out how to fix the height and alignemnt of the nav items*/
 
 nav ul {
-  margin: 0;
-  padding: 0;
+  margin: 0 5px;
+  padding: 0 5px;
   display: flex;
   justify-content:flex-end;
+  flex: 3 1 auto;
   align-items:center;
   height:100px;
-  font-family: 'Rakkas', cursive
+  font-family: 'Rakkas', cursive;
 }
 
 nav ul li {
@@ -105,8 +106,14 @@ nav ul li a:hover {
     border:4px solid navy;
     background-color:cornflowerblue;
     border-radius:10px;
-    max-width:900px;
+    max-width:100%;
     color:whitesmoke;
+    font-family: 'Euphoria Script', cursive;    
+}
+
+.introduction {
+  font-family: 'Rakkas', cursive;
+
 }
 
 .introductory-para {
@@ -126,23 +133,32 @@ h1 {
   font-family: 'Euphoria Script', cursive;    
   text-align:center;
   font-size:40px;
+  color:whitesmoke;
 }
 
 h2 {
   font-family: 'Euphoria Script', cursive;    
   text-align:center;
   font-size:30px;
-  padding:5px;
+  padding:2px;
+  margin-bottom:5px groove navy;
+  color:whitesmoke;
 }
 
+h3 {
+  text-align:center;
+  font-size:20px;
+  padding:5px;
+  color:whitesmoke;
+}
 
 p {
     color: navy;
     text-align: center;
-    max-width: 900px;
+    max-width: 100%;
     padding:5px;
     font-family: 'Rakkas', cursive;
-    margin: 0 36px 36px;
+    margin: 0 50px;
 }
 
 em {
@@ -188,28 +204,42 @@ a:link {
     display:flex;
   }
 
-/* home page flex-box style */
+/* home page style */
+
+/*
+.about {
+  background-image: url('../images/crossword.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed; 
+  opacity:0.3;
+}
+
+.about p {
+  opacity:unset;
+}
+
+*/
 .page-gallery {
     display: grid;
-    grid-template-columns: 30rem 30rem;
+    grid-template-columns: 2fr 2fr;
     grid-gap: 10px;
    font-size:larger;
     align-items: stretch;
     padding: 10px 25px;
-    max-width: 1400px;
+    max-width: 80%;
     margin: 0 auto;
-    font-family: 'Rakkas', cursive
-
-    
+    font-family: 'Rakkas', cursive    
 }
 
 /* Image code to consider when think*/
 .page-gallery img {
   width: 100%;
-  max-width: 300px;
+  /*max-width: 300px;*/
   height: 300px;
   object-fit: cover;
   border-radius:10px;
+  box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.5);
 }
 
 .page-gallery img:hover{
@@ -231,7 +261,7 @@ a:link {
 /* home page pictures*/
 
 .home-pics {
-  padding:10px;
+  padding:20px;
 }
 /*
 .gallery::after {
@@ -244,6 +274,15 @@ a:link {
 
 
 /* Parsing Page Specifics*/
+
+.parsing {
+  color:navy;
+}
+
+.parsing-steps em {
+  font-weight:bold;
+  color:whitesmoke;
+}
 
 /* TKT
 #parsing-page {
@@ -346,7 +385,6 @@ tbody tr:nth-child(even) {
   align-items:center;
   justify-content:stretch;
   border-bottom: whitesmoke groove 1px;
-  line-width:900px;
   padding:10px;
 }
 
