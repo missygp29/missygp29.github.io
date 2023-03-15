@@ -90,9 +90,11 @@ nav ul li a:hover {
 
 .page-home {
   background-color:whitesmoke;
-  padding:10px;
-  font-style:italic;
+  padding: 15px;
+  /* TKT do I want a transformation somehow? e.g. transform:capitalize; */
   margin: auto;
+  border:navy solid 4px;
+  transform:scale(1.1);
 }
 /* Introduction styling needs to go here */
 
@@ -168,7 +170,10 @@ a:link {
 
   /*class for introductory paragraphs on each page*/
 
-   
+  footer {
+    display:flex;
+  }
+
 /* home page flex-box style */
 .page-gallery {
     display: grid;
@@ -206,9 +211,11 @@ a:link {
     /*width:30vw;*/
 }
 
+/* home page pictures*/
 
-/* put in something about the figure captions for main page */
-
+.home-pics {
+  padding:10px;
+}
 /*
 .gallery::after {
   content: "";
@@ -217,9 +224,7 @@ a:link {
 
 */
 
-footer {
-  display:flex;
-}
+
 
 /* Parsing Page Specifics*/
 
@@ -237,6 +242,7 @@ table {
   border: 3px solid navy;
   border-collapse: collapse;
   color: navy;
+  max-width:90%;
 }
 
 tr {
@@ -259,7 +265,7 @@ th {
 table caption {
   font-weight: bold ;
     text-align: center;
-  font-size: 2 rem;
+  font-size:larger;
   padding: 1rem 0;
   color: navy;
 }
@@ -308,3 +314,14 @@ tbody tr:nth-child(even) {
 /* Great Clues styling */
 
 /* Bonuses styling */
+
+.bonus-items {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
+}
+
+.setter {
+  font-style:italic;
+}
