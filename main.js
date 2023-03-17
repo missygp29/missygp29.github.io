@@ -20,7 +20,7 @@ const labelParsing1 = document.getElementById('label1-parsing')
 
   function myTextChange() {
     document.getElementById('btn2').innerHTML = 'You got it!'
-    label.innerHTML='Sometimes, cues are within a word and act on the other part of the word. Given that, which of the syllables below corresponds to one of the cue word categories above?'
+    label.innerHTML='Sometimes, cues are a syllable or recognized word within a word in the clue. The cue often then acts on the other part of the word in the clue. Now that you know that, which of the syllables in the clue above corresponds to one of the cue word categories above? And what should it act upon?'
     ;
   }
 
@@ -38,6 +38,7 @@ const labelClues1 = document.getElementById('label1-gc')
       alert("Not quite; let's try again")
       inputClues1.value = '';
       btnClues1.innerText = 'let\'s try again'
+      labelClues1.innerHTML = 'Maybe double check your spelling of the second word?'
     }
   })
 

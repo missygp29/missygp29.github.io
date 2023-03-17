@@ -1,6 +1,4 @@
-header {
-    display:flex
-}
+
 /* Here I want to do a class specifically for just the header for the css*/
 
 * {
@@ -150,6 +148,7 @@ h3 {
   font-size:20px;
   padding:5px;
   color:whitesmoke;
+  margin: 20px 5px 0;
 }
 
 p {
@@ -165,9 +164,17 @@ em {
   font-style:italic;
 }
 
-h3 {
-  text-align:center;
+label {
+  color:navy;
 }
+
+figure {
+  text-align:center;
+  color:navy;
+  font-style:italic;
+  font-size:smaller;
+}
+
 
 /* also need to do: 
 <br>
@@ -202,24 +209,13 @@ a:link {
 
   footer {
     display:flex;
+    justify-items: space-between;
+    
   }
 
 /* home page style */
 
-/*
-.about {
-  background-image: url('../images/crossword.png');
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-attachment: fixed; 
-  opacity:0.3;
-}
 
-.about p {
-  opacity:unset;
-}
-
-*/
 .page-gallery {
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -337,6 +333,7 @@ tbody tr:nth-child(even) {
   padding-top:20px;
   margin-bottom: 0;
   text-align:center;
+  color:navy;
 }
 
 
@@ -351,13 +348,15 @@ tbody tr:nth-child(even) {
   margin-top:10px;
   margin-bottom:10px;
 }
-.etymology-image {
+
+/*.etymology-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 30%;
   padding:20px 10px;
 }
+*/
 
 .rabbithole-items {
   display: flex;
@@ -365,7 +364,7 @@ tbody tr:nth-child(even) {
   align-items:center;
 }
 
-.rabbithole-gallery {
+.rabbithole-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -377,6 +376,23 @@ tbody tr:nth-child(even) {
   text-align:center;
 }
 
+hr {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #095484;
+    background-image: linear-gradient(to right, cornflowerblue, whitesmoke, cornflowerblue);
+    height:3px;
+    margin-top:3px;
+    border:0;
+}
+
+.rabbithole-div {
+  color:navy;
+  margin:auto;
+  width:80%;
+}
+
 /* Great Clues styling */
 
 .clue-gallery {
@@ -384,16 +400,15 @@ tbody tr:nth-child(even) {
   flex-direction:column;
   align-items:center;
   justify-content:stretch;
-  border-bottom: whitesmoke groove 1px;
   padding:10px;
 }
 
-.clue-gallery button {
+button {
   background-color: cornflowerblue;
   border: none;
   border-radius:5px;
   color: white;
-  padding: 15px 32px;
+  padding: 5px 11px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
@@ -403,6 +418,12 @@ tbody tr:nth-child(even) {
   font-family: 'Flamenco', cursive;
 }
 
+input {
+  border-radius:2px;
+  border:navy;
+  margin:10px;
+}
+
 .clue-gallery input {
   display:inline-flex;
 }
@@ -410,7 +431,6 @@ tbody tr:nth-child(even) {
 .clue-gallery p {
   margin-bottom:0;
 }
-
 
 
 
