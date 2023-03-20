@@ -32,8 +32,9 @@ const labelClues1 = document.getElementById('label1-gc')
   btnClues1.addEventListener("click", function() {
     if (document.getElementById("clue1-gc").value === "agent provocateur") {
       alert("That's right - nice job!") 
-      labelClues1.innerHTML = 'Now try another one!'
+      labelClues1.innerHTML = 'Now try another one'
       inputClues1.value = '';
+      btnClues1.innerText = 'Good work!'
     } else {
       alert("Not quite; let's try again")
       inputClues1.value = '';
@@ -48,8 +49,9 @@ const labelClues2 = document.getElementById('label2-gc')
   btnClues2.addEventListener("click", function() {
     if (document.getElementById("clue2-gc").value === "oftentimes") {
       alert("That's right - nice job!") 
-      labelClues2.innerHTML = 'Now try another one!'
+      labelClues2.innerHTML = 'Now try another one'
       inputClues2.value = '';
+      btnClues2.innerText = 'Good work!'
     } else {
       alert("Not quite; let's try again")
       inputClues2.value = '';
@@ -63,7 +65,8 @@ const labelClues2 = document.getElementById('label2-gc')
     btnClues3.addEventListener("click", function() {
       if (document.getElementById("clue3-gc").value === "a recipe for disaster") {
         alert("That's right - nice job!") 
-        labelClues3.innerHTML = 'Now try another one!'
+        labelClues3.innerHTML = 'Now try another one'
+        btnClues3.innerText = 'Good work!'
         inputClues3.value = '';
       } else {
         alert("Not quite; let's try again")
@@ -71,3 +74,19 @@ const labelClues2 = document.getElementById('label2-gc')
         btnClues3.innerText = 'let\'s try again'
       }
     })
+
+    const btnClues4= document.getElementById("button4-gc")
+    const inputClues4 = document.getElementById('clue4-gc')
+    const labelClues4 = document.getElementById('label4-gc')
+      btnClues4.addEventListener("click", function() {
+        if (document.getElementById("clue4-gc").value === "bolt from the blue") {
+          alert("That's right - nice job!") 
+          labelClues4.innerHTML = 'Now try another one'
+          btnClues4.innerText = 'Good work!'
+          inputClues4.value = '';
+        } else {
+          alert("Not quite; let's try again")
+          inputClues4.value = '';
+          btnClues4.innerText = 'let\'s try again'
+        }
+      })

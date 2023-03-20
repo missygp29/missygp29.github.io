@@ -7,11 +7,7 @@
 
   /*TKT call in fonts*/
 
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 15px;
-}
+
 /* Header Nav-Bar Styling */
 
 header {
@@ -44,7 +40,8 @@ margin: 0;
 nav {
   background-color: blue;
   margin: 0;
-  overflow: hidden;
+  /*
+  overflow: hidden;*/
   display:inline;
 }
 
@@ -73,7 +70,9 @@ nav ul li a {
   color: white;
   background-color: blue;
   line-height: 1.6;
-  padding: 10px;
+  /*
+  padding: 10px;*/
+  padding:0.8em;
   text-decoration: none;
 }
 
@@ -94,7 +93,7 @@ nav ul li a:hover {
 
 .page-home {
   background-color:whitesmoke;
-  padding: 15px;
+  padding: 0.9rem;
   /* TKT do I want a transformation somehow? e.g. transform:capitalize; */
   margin: auto;
   border:navy solid 4px;
@@ -129,19 +128,22 @@ body {
     font-family: 'Rakkas', cursive;
     background-color: #b0c4de;
     margin:0;
+    padding:0;
+    font-size:1em;
+    color:navy;
 }
 
 h1 {
   font-family: 'Euphoria Script', cursive;    
   text-align:center;
-  font-size:40px;
+  font-size: 3.75em;
   color:whitesmoke;
 }
 
 h2 {
   font-family: 'Euphoria Script', cursive;    
   text-align:center;
-  font-size:30px;
+  font-size:1.5em;
   padding:2px;
   margin:5px;
   color:whitesmoke;
@@ -149,7 +151,7 @@ h2 {
 
 h3 {
   text-align:center;
-  font-size:20px;
+  font-size:1em;
   padding:5px;
   color:whitesmoke;
   margin: 20px 5px 0;
@@ -182,7 +184,6 @@ figure {
 
 /* also need to do: 
 <br>
-<h2> and <h3>
 */
 
 /* unvisited link */
@@ -209,11 +210,23 @@ a:link {
     text-decoration:none;
   }
 
+  .image-source {
+    font-size:smaller;
+    font-style:italic;
+  }
   /*class for introductory paragraphs on each page*/
 
   footer {
     display:flex;
-    
+    margin:auto;
+    justify-content: space-between;
+    max-width:80%;
+    padding:10px;
+
+  }
+
+  footer p {
+    color:cornflowerblue;
   }
 
 /* home page style */
@@ -339,6 +352,34 @@ tbody tr:nth-child(even) {
   color:navy;
 }
 
+.glossary {
+  text-align:center;
+}
+
+
+dl {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 300px; /* set the container width*/
+  overflow: visible;
+  margin:auto; 
+}
+
+dl dt {
+  flex: 0 0 50%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color:whitesmoke;
+}
+
+dl dd {
+  margin-left: auto;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 0 0 50%;
+}
 
 /* Rabbithole Styling */
 
@@ -449,4 +490,33 @@ input {
 
 .setter {
   font-style:italic;
+}
+
+.resources {
+  list-style:none; counter-reset:0;
+  color:navy;
+}
+
+
+.resources li::before {content: counter(li); 
+  color: navy;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em}
+
+ .resources li {
+  counter-increment: li
+}
+
+.references {
+  list-style: circle;
+  color:navy;
+  font: size 0.25em;
+  padding:10px;
+  max-width:80%;
+}
+
+.references em {
+  font-style:italic;
+  color: cornflowerblue;
 }
