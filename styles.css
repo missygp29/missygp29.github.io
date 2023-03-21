@@ -493,8 +493,9 @@ input {
 }
 
 .resources {
-  list-style:none; counter-reset:0;
+  list-style:none; 
   color:navy;
+  text-align:center;
 }
 
 
@@ -511,7 +512,7 @@ input {
 .references {
   list-style: circle;
   color:navy;
-  font: size 0.25em;
+  font-size: 0.75;
   padding:10px;
   max-width:80%;
 }
