@@ -381,6 +381,12 @@ dl dd {
   flex: 0 0 50%;
 }
 
+#cueword-heading, #letters-heading {
+  font-weight:bold;
+  border-bottom: 1px solid navy;
+  border-top: 1px solid navy;
+}
+
 /* Rabbithole Styling */
 
 .rabbithole-title {
