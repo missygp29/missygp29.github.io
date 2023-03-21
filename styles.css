@@ -518,7 +518,7 @@ input {
 .references {
   list-style: circle;
   color:navy;
-  font-size: 0.75;
+  font-size: 0.75em;
   padding:10px;
   max-width:80%;
 }
