@@ -126,7 +126,8 @@ nav ul li a:hover {
 
 body {
     font-family: 'Rakkas', cursive;
-    background-color: #b0c4de;
+    /*background-color: #b0c4de;*/
+    background-color: #94afd2;
     margin:0;
     padding:0;
     font-size:1em;
