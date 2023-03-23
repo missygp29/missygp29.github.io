@@ -3,6 +3,7 @@
 
 * {
     box-sizing: content-box;
+    scroll-behavior: smooth;
   }
 
   /*TKT call in fonts*/
@@ -56,6 +57,7 @@ nav ul {
   align-items:center;
   height:100px;
   font-family: 'Rakkas', cursive;
+  font-size: 2vw;
 }
 
 nav ul li {
@@ -97,7 +99,7 @@ nav ul li a:hover {
   /* TKT do I want a transformation somehow? e.g. transform:capitalize; */
   margin: auto;
   border:navy solid 4px;
-  transform:scale(1.1);
+  /*transform:scale(1.0);*/
 }
 /* Introduction styling needs to go here */
 
@@ -145,9 +147,13 @@ h2 {
   font-family: 'Euphoria Script', cursive;    
   text-align:center;
   font-size:1.5em;
-  padding:2px;
-  margin:5px;
+  padding:10px;
+  margin:auto;
   color:whitesmoke;
+  border:4px solid navy;
+    background-color:#3371E6;
+    border-radius:10px;
+    max-width:40%;
 }
 
 h3 {
@@ -155,7 +161,12 @@ h3 {
   font-size:1em;
   padding:5px;
   color:whitesmoke;
-  margin: 20px 5px 0;
+  margin: auto;
+  border:4px solid navy;
+    background-color:#3371E6;
+    border-radius:10px;
+    max-width:40%;
+  
 }
 
 p {
@@ -190,25 +201,32 @@ figure {
 /* unvisited link */
 a:link {
     color: white;
-    text-decoration:none;
+    /* commented out for accessibility
+    text-decoration:none;*/
   }
   
   /* visited link */
   a:visited {
     color: white;
-    text-decoration:none;
+        /* commented out for accessibility
+
+    text-decoration:none;*/
   }
   
   /* mouse over link */
   a:hover {
     color: blueviolet;
-    text-decoration:none;
+        /* commented out for accessibility
+
+    text-decoration:none;*/
   }
   
   /* selected link */
   a:active {
     color: cornflowerblue;
-    text-decoration:none;
+        /* commented out for accessibility
+
+    text-decoration:none;*/
   }
 
   .image-source {
