@@ -16,15 +16,20 @@ header {
 flex: none;
 justify-content: space-between;
 align-items: center;
-max-height: 100px;
+max-height: 20vh;
 padding:0;
 margin: 0;
+position: relative;
+margin-left: -.05 rem;
 }
+
 
 
 #logo {
   background-color: cornflowerblue;
-  max-height:100px;
+  max-height:22vh;
+  padding: 4rem 0 2.5rem 2.5rem;
+  
 }
 /* in case I need to do this TKT
 .logo-figure {
@@ -33,37 +38,43 @@ margin: 0;
 */
 
 .logo-image {
-  height:100px;
-  width: 100px;
+  height:22vh;
+  width: 22vh;
   display:inline;
+  padding-top:1rem;
+  padding-bottom:1.4rem;
 }
 
 nav {
   background-color: blue;
-  margin: 0;
+  margin: -6rem -10px 0 0;
   /*
   overflow: hidden;*/
   display:inline;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
 }
 
 /*TKT figure out how to fix the height and alignemnt of the nav items*/
 
 nav ul {
-  margin: 0 5px;
-  padding: 0 5px;
+  margin: 6rem 2rem 0 0;
+  padding: 0.75rem 0.75rem 0.75rem 0;
   display: flex;
   justify-content:flex-end;
   flex: 3 1 auto;
   align-items:center;
-  height:100px;
+  max-height:20vh;
   font-family: 'Rakkas', cursive;
-  font-size: 2vw;
+  font-size: 3vh;
+  color: whitesmoke;
 }
 
 nav ul li {
   display: inline-block;
   list-style-type: none;
-  padding: 5px 10px 10px 0;
+  max-height: 30vh;
+  padding: 0 0.75rem 2.5rem 0.75rem;
   align-items:center;
   white-space: nowrap;
 }
@@ -71,47 +82,88 @@ nav ul li {
 nav ul li a {
   color: white;
   background-color: blue;
-  line-height: 1.6;
-  /*
+  /*line-height: 1.6;
+  
   padding: 10px;*/
   padding:0.8em;
   text-decoration: none;
 }
 
 /*
-nav ul li:first-child {
-  margin-right: auto;
-  padding: 10px
+#clues-active, #parsing-active, #bonuses-active, #rabbitholes-active {
+  color:skyblue;
 }
 */
+
 
 nav ul li a.logo {
   background-color: cornflowerblue;
   font-weight:bold;
 }
+
+nav ul li a:link, nav ul li a:visited {
+  color: whitesmoke;
+}
+
 nav ul li a:hover {
   background-color: navy;
 }
 
-.page-home {
-  background-color:whitesmoke;
-  padding: 0.9rem;
-  /* TKT do I want a transformation somehow? e.g. transform:capitalize; */
-  margin: auto;
-  border:navy solid 4px;
-  /*transform:scale(1.0);*/
+nav ul li a:visited  {
+  background: ; cornflowerblue;
+  color: whitesmoke;
+  text-decoration:none;
 }
+
+
+
 /* Introduction styling needs to go here */
 
 .page-title {
     text-align:center;
-    margin: 32px;
-    border:4px solid navy;
-    background-color:cornflowerblue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1 rem;
+    /*border:4px solid navy;*/
+    /*background-color:cornflowerblue;*/
     border-radius:10px;
-    max-width:100%;
-    color:whitesmoke;
-    font-family: 'Euphoria Script', cursive;    
+    max-width:70%;
+    font-family: 'Euphoria Script', cursive; 
+    color: cornflowerblue;  
+}
+
+#site-title-animated
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #92B4F2 0%,
+    #6495ED 17%,
+    #3676E8 36%,
+    #185BD3 53%,
+    #1347A5 70%,
+    navy 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 100% auto;
+  color: #fff;
+  background-clip: text;
+  text-emphasis-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 30s linear infinite;
+  animation-direction:alternate;
+  display: inline-block;
+      font-size: 4vh;
+width: 100%;
+margin-left: 4rem;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 
 .introduction {
@@ -129,10 +181,11 @@ nav ul li a:hover {
 body {
     font-family: 'Rakkas', cursive;
     /*background-color: #b0c4de;*/
-    background-color: #94afd2;
+    /*background-color: #94afd2;*/
+    background-color:aliceblue;
     margin:0;
     padding:0;
-    font-size:1em;
+    font-size:2.5em;
     color:navy;
 }
 
@@ -140,32 +193,34 @@ h1 {
   font-family: 'Euphoria Script', cursive;    
   text-align:center;
   font-size: 3.75em;
-  color:whitesmoke;
+  color:cornflowerblue;
+  padding: 1rem;
 }
 
 h2 {
   font-family: 'Euphoria Script', cursive;    
   text-align:center;
-  font-size:1.5em;
-  padding:10px;
+  font-size:2em;
+  padding:4rem;
   margin:auto;
-  color:whitesmoke;
-  border:4px solid navy;
-    background-color:#3371E6;
+  color:cornflowerblue;
     border-radius:10px;
     max-width:40%;
+    text-shadow: -1px -1px 1px #FFFFFF, 1px 1px 1px #000000;
+    font-weight:bold;
+    
 }
 
 h3 {
   text-align:center;
-  font-size:1em;
+  font-size:1.5em;
   padding:5px;
-  color:whitesmoke;
+  color:cornflowerblue;
   margin: auto;
-  border:4px solid navy;
-    background-color:#3371E6;
     border-radius:10px;
     max-width:40%;
+    text-shadow: -1px -1px 1px #FFFFFF, 1px 1px 1px #000000;
+    font-weight:bold;
   
 }
 
@@ -200,14 +255,14 @@ figure {
 
 /* unvisited link */
 a:link {
-    color: white;
+    color: cornflowerblue;
     /* commented out for accessibility
     text-decoration:none;*/
   }
   
   /* visited link */
   a:visited {
-    color: white;
+    color: mediumpurple;
         /* commented out for accessibility
 
     text-decoration:none;*/
@@ -223,7 +278,7 @@ a:link {
   
   /* selected link */
   a:active {
-    color: cornflowerblue;
+    color: skyblue;
         /* commented out for accessibility
 
     text-decoration:none;*/
@@ -250,6 +305,9 @@ a:link {
 
 /* home page style */
 
+.home-pics:hover{
+  transform:scale(2)
+}
 
 .page-gallery {
     display: grid;
@@ -267,7 +325,7 @@ a:link {
 .page-gallery img {
   width: 100%;
   /*max-width: 300px;*/
-  height: 300px;
+  height: 40rem;
   object-fit: cover;
   border-radius:10px;
   box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.5);
@@ -292,7 +350,10 @@ a:link {
 /* home page pictures*/
 
 .home-pics {
-  padding:20px;
+  padding:1.3rem;
+  height: 30rem;
+  width:30rem;
+
 }
 /*
 .gallery::after {
@@ -380,7 +441,7 @@ dl {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
-  width: 300px; /* set the container width*/
+  width: 18.75rem; /* set the container width*/
   overflow: visible;
   margin:auto; 
 }
@@ -451,8 +512,8 @@ hr {
     margin-right: auto;
     background: #095484;
     background-image: linear-gradient(to right, cornflowerblue, whitesmoke, cornflowerblue);
-    height:3px;
-    margin-top:3px;
+    height:.5rem;
+    margin-top:.5rem;
     border:0;
 }
 
@@ -491,6 +552,9 @@ input {
   border-radius:2px;
   border:navy;
   margin:10px;
+  height: 4rem;
+  font-size: 100%;
+  font-family: 'Rakkas', cursive;
 }
 
 .clue-gallery input {
@@ -537,7 +601,7 @@ input {
 .references {
   list-style: circle;
   color:navy;
-  font-size: 0.75rem;
+  font-size: 1.75rem;
   padding:10px;
   max-width:80%;
 }

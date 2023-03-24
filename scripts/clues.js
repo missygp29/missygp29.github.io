@@ -59,3 +59,4 @@ const labelClues2 = document.getElementById('label2-gc')
           btnClues4.innerText = 'Let\'s try again'
         }
       })
+
