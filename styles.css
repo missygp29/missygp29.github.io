@@ -19,7 +19,7 @@ max-height: 25vh;
 padding:0;
 position: relative;
 margin-left: -0.05rem;
-margin-top: -1rem;
+margin-top: -0.7rem;
 }
 
 
@@ -51,13 +51,13 @@ margin: 0 -10px 0 0;
 overflow: hidden;*/
 display:inline;
 padding-top: 6rem;
-padding-bottom: 3rem;
+/*padding-bottom: 3rem;*/
 }
 
 /*TKT figure out how to fix the height and alignemnt of the nav items*/
 
 nav ul {
-margin: 6rem 2rem 0 0;
+margin: 1rem 2rem 0 0;
 padding: 0.75rem 0.75rem 0.75rem 0;
 display: flex;
 justify-content:flex-end;
@@ -73,7 +73,7 @@ nav ul li {
 display: inline-block;
 list-style-type: none;
 max-height: 30vh;
-padding: 0 0.75rem 2.5rem 0.75rem;
+/*padding: 0 0.75rem 2.5rem 0.75rem;*/
 align-items:center;
 white-space: nowrap;
 }
@@ -83,7 +83,8 @@ color: #185BD3;
 /*line-height: 1.6;
 
 padding: 10px;*/
-padding:0.8em;
+padding-left:0.8em;
+padding-right:0.8em;
 text-decoration: none;
 }
 
@@ -201,7 +202,7 @@ color:cornflowerblue;
 padding: 1rem;
 margin:auto;
 max-width:40%;
-  text-shadow: -1px -1px 1px #FFFFFF, 1px 1px 1px #000000;
+  text-shadow: -1px -1px 1px #FFFFFF, 1px 1px 1px #000080;
   font-weight:bold;
 }
 
@@ -535,6 +536,10 @@ margin:auto;
 width:80%;
 }
 
+.rabbithole-div figcaption {
+  font-style: italic;
+}
+
 /* Great Clues styling */
 
 .clue-gallery {
@@ -617,7 +622,7 @@ counter-increment: li
 .references {
 list-style: circle;
 color:navy;
-font-size: 1.75rem;
+font-size: 1rem;
 padding:10px;
 max-width:80%;
 }
