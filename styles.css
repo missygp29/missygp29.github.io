@@ -17,9 +17,8 @@ justify-content: space-between;
 align-items: center;
 max-height: 25vh;
 padding:0;
-margin: 5;
 position: relative;
-margin-left: -.05 rem;
+margin-left: -0.05rem;
 margin-top: -1rem;
 }
 
@@ -141,7 +140,7 @@ text-decoration:none;
 {
   font-family: 'Euphoria Script', cursive; 
   text-align:center;
-font-size: 4em;
+font-size: 3.7em;
   background-image: linear-gradient(
   -225deg,
   #92B4F2 0%,
@@ -155,7 +154,7 @@ font-size: 4em;
 background-size: auto auto;
 background-clip: border-box;
 background-size: 200% auto;
-color: #fff;
+color: #1347A5;
 background-clip: text;
 text-emphasis-color: transparent;
 -webkit-background-clip: text;
