@@ -59,7 +59,7 @@ padding: 0.75rem 0.75rem 0.75rem 0;
 display: flex;
 justify-content:flex-end;
 flex: 3 1 auto;
-align-items:center;
+align-items:start;
 max-height:20vh;
 font-family: 'Rakkas', cursive;
 font-size: 3.5vh;
