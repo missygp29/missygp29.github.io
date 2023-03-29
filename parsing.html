@@ -78,19 +78,37 @@
                   <td>Run-ons</td>
                    <td>Some; found; included</td>
                    <td>Look for that a word whose letters span more than one word in the clue.</td>
-                   <td>Some chap he'll employ in Cork? (7) Looking at the words here, there is a word that spans them that means cork - PHELLEM. Some chaP HE'LL EMploy in Cork? (NB: I HATE this type of clue!)</td>
+                   <td>Some chap he'll employ in Cork? (7) Looking at the words here, there is a word that spans them that means cork - PHELLEM. Some cha<span>p he'll em</span>ploy in Cork? (NB: I HATE this type of clue!)</td>
                 </tr>
                 <tr>
                   <td>Cricket references</td>
                   <td>side; team; caught; run(s); wicket</td>
-                  <td>Add in the letters. A cricket team or side has eleven players, and so this usually means "xi"; side might also refer to "off" or "on", the two sides of the cricket pitch; caught is "c", "run(s)" is r, and wicket is "w." You may also get a reference to a "maiden," an over with no runs conceded.</td>
-                  <td></td>
+                  <td>Add in the letters. A cricket team or side has eleven players, and so this usually means "xi"; side might also refer to "off" or "on", the two sides of the cricket pitch; caught is "c", "run(s)" is r, and wicket is "w." You may also get a reference to a "maiden," an over with no runs conceded, or one of the <a href="https://cricketmastery.com/fielding-positions-in-cricket/">many, many fielding positions.</a></td>
+                  <td>Beer to do with new fielder's overthrow? (7) The fielder here is "slip," and that is backward (PILS) due to the "overthrow" cue. New is "n," and to do with is "re." The latter is backward, too, and the answer is PILSNER (meaning "beer").</td>
                   </tr>
                 <tr>
                     <td>Taking a Letter (or removing one)</td>
-                    <td>beginning, initially, heading; <br>endlessly, losing;</td>
+                    <td>beginning, initially, heading <br>endlessly, losing, finally</td>
                     <td>Take the first letter from the word next to it (or more as necessary)</td>
                     <td>Piper's beginning with Highlander's short lament (4). Piper's beginning (P) goes with Highlander's short ("wee") to make WEEP.</td>
+                  </tr>
+                  <tr>
+                    <td>Reversing the letters</td>
+                    <td>over; back; wrong; reverse; up</td>
+                    <td>Whatever the cue word is next to, reverse the order of the letters.</td>
+                    <td>Given backing, help work in stages? (5). Help is "aid," and work is "op." Backward, we get PODIA (stages).</td>
+                  </tr>
+                  <tr>
+                    <td>Names</td>
+                    <td>Girl, boy, woman, man</td>
+                    <td>This usually means that there is a name in the clue - Di seems to be a common one, but it really can be anything (helpfully!)</td>
+                    <td>Girl enclosing ten Xs - one could be far-reaching! (9) Ten Xs is x tens (tricky!), one is "i", and that is enclosed by Eve to give EXTENSIVE.</td>
+                  </tr>
+                  <tr>
+                    <td>Wraparounds</td>
+                    <td>In; included; enclosed; surrounds</td>
+                    <td>This usually means that the word spans another part of the clue solution.</td>
+                    <td>Children receiving credit for lengthy essay (6). Children is "seed," and credit is "cr" - seed "receives" cr to make SCREED.</td>
                   </tr>
                 </tbody>
               </table>
@@ -139,6 +157,10 @@ Some words or letters cue to add a specific other group of letters (or take thos
           <dd>EC (postcode for the City of London), UR</dd>
           <dt>Church</dt>
           <dd>CE, CH</dd>
+          <dt>New</dt>
+          <dd>N</dd>
+          <dt>One</dt>
+          <dd>A, I</dd>
           <dt>Political Affiliations - Conservative</dt>
           <dd>Blue, Tory, R (for right-wing)</dd>
           <dt>Political Affiliations - Labour</dt>
@@ -148,12 +170,25 @@ Some words or letters cue to add a specific other group of letters (or take thos
           <dt>Unknown</dt>
           <dd>X, Y</dd>
           <dt>Worker</dt>
-          <dd>Ant, Bee</dd>
+          <dd>Ant, Bee, Hand</dd>
           <dt>Work(s)</dt>
           <dd>Op(s)</dd>
         </dl>
       </div>
-     
+      <div class="try-parsing">
+        <br>Let's try parsing another clue
+        <br>In act at start of opera, woman made to stop humming (10)
+      <input id="clue2-parsing" type="text">
+      
+      <button id="button2-parsing">Let's go!</button>
+      <br><label id="label2-parsing">(use lower case - answer is case sensitive)</label>
+      <p>Would you like a hint?
+      <button id='btnhint2' onclick='myTextChange2()'>Yes please! </button>
+      <br><label id="hint2"> </label>
+      </p>
+      <hr>
+            </div>
+    
             
       <footer>
         <p>Author and Copyright: Grace Pickering, 2023</p>
