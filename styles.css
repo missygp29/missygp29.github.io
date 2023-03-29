@@ -136,7 +136,28 @@ text-decoration:none;
   padding-top: 1em;
 }
 
-#site-title-animated
+#site-title-animated {
+  font-size: 3.85em;
+  font-family: 'Euphoria Script', cursive;
+  text-align:center;
+  animation-name: title;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  color: #92B4F2;
+  width:100%;
+  margin-left: auto;
+}
+  
+@keyframes title {
+  0%   {color: #92B4F2;}
+  20%  {color: #6495ED;}
+  40%  {color:#3676E8;}
+  60% {color:#185BD3;}
+  80% {color:#1347A5}
+  100% {color: fuchsia;}
+}
+/*
 {
   font-family: 'Euphoria Script', cursive; 
   text-align:center;
@@ -158,20 +179,23 @@ color: #1347A5;
 background-clip: text;
 text-emphasis-color: transparent;
 -webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+color: rgba(19,71,165, 0);
+/*-webkit-text-fill-color: transparent;
 animation: textclip 20s linear infinite;
 animation-direction:alternate-reverse;
 display: inline-block;
 width: 100%;
 margin-left: auto;
-/*check how this works in the published version*/
+check how this works in the published version
 }
+
 
 @keyframes textclip {
 to {
   background-position: 200% center;
 }
 }
+*/ 
 
 .introduction {
 font-family: 'Rakkas', cursive;
