@@ -231,7 +231,7 @@ h2 {
 font-family: 'Euphoria Script', cursive;    
 text-align:center;
 font-size:2em;
-padding:2rem;
+padding:1.5rem;
 margin:auto;
 color:cornflowerblue;
   max-width:40%;
@@ -445,7 +445,6 @@ th {
 text-align: center;
 color: white;
 background-color: navy;
-border: solid 1px navy;
 }
 table caption {
 font-weight: bold ;
@@ -535,7 +534,7 @@ align-items:center;
 display: block;
 margin-left: auto;
 margin-right: auto;
-width: 30%;
+/*width: 30%;*/
 }
 
 .pronounce {
