@@ -1,0 +1,55 @@
+/*General Styling */
+
+/*headings*/
+/*going to need to add specific classes etc b/c otherwise the formatting from Crosswording has control*/
+
+h1 {
+  background-color: white;
+  color: violet; 
+  text-align: center;
+  text-shadow: -1px -1px 0 navy, 1px -1px 0 navy, -1px 1px 0 navy, 1px 1px 0 navy;
+font-size: 50px
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+/* hyperlinks */
+/* unvisited link */
+a:link {
+  color: cornflowerblue;
+  /* commented out for accessibility
+  text-decoration:none;*/
+}
+
+/* visited link */
+a:visited {
+  color: mediumpurple;
+      /* commented out for accessibility
+  text-decoration:none;*/
+}
+
+/* mouse over link */
+a:hover {
+  color: blueviolet;
+      /* commented out for accessibility
+  text-decoration:none;*/
+}
+
+/* selected link */
+a:active {
+  color: skyblue;
+      /* commented out for accessibility
+  text-decoration:none;*/
+}
+
+/* Buttons styling */
+button {
+  align-content: center;
+}
+
