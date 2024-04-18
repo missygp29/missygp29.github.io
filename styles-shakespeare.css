@@ -7,7 +7,7 @@ body {
   color:deeppink;
   margin: 0 auto;
   text-align: center;
-  max-width: 80%;
+  max-width: 70%;
 }
 .intro {
   font-style:italic;
@@ -31,22 +31,34 @@ body {
 /*headings*/
 /*going to need to add specific classes etc b/c otherwise the formatting from Crosswording has control*/
 
+p {
+  font-weight: normal;
+}
 h1 {
   color: violet; 
   text-align: center;
   text-shadow: -1px -1px 0 navy, 1px -1px 0 navy, -1px 1px 0 navy, 1px 1px 0 navy;
-font-size: 50px;
+font-size: 3.125rem;
 font-weight: bold;
 }
 
 h2 {
 color:blueviolet;
+font-weight:bold;
+font-size: 3 rem;
 }
 
 h3 {
 color:indigo;
+font-weight:bold;
+font-size: 2.75rem;
 }
 
+h4 {
+  color:midnightblue;
+  font-weight: bolder;
+  font-size:2.25;
+}
 /* hyperlinks */
 /* unvisited link */
 a:link {
@@ -76,8 +88,31 @@ a:active {
   text-decoration:none;*/
 }
 
+/*page layout - flexbox display (I hope)*/
+.resources {
+  display:flex;
+}
+
+.movies {
+  flex:50%;
+  align-items:center;
+  font-weight: bolder;
+  text-align:center;
+  /*font-size:80%;*/
+  padding: 5px;
+  margin: 0;
+}
+    /*float: left;
+    width: 50%;
+    padding: 15px;*/
 
 
+.fig-resources
+{font-weight: normal;
+  max-width: 50%;
+  text-align: center;
+
+}
 /*Quote Generator Styling*/
 
 .quote-generator {
@@ -108,3 +143,4 @@ button {
   font-size:large;
   margin: 0 auto;
 }
+

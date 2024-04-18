@@ -1,3 +1,13 @@
+<!-- What to do next: 1) Need to put in book and movie adaptations; 
+  2) Need to put in flex box displays so that I can have a better layout that I like - with resource on the left, then a commentary on the right)
+3) Shakespeare insult generator;
+4) Add more to the random quote generator and clean up the javascript so that there are quotation marks for clearer delineation, spaces, etc.)
+5) TIdy up the top and how I think about this 
+6) Put in alt text
+7) test for accessibility
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,50 +27,95 @@
     <p id="quote"></p>
     <hr>
   </div>
-<div id="howtoread"></div>
-<h2>How to Read Shakespeare</h3>
-<p>This section has some tips and tricks on how to read Shakespeare.</p>
-<p>Shakespeare isn't easy for our modern ears. If you have not been taught how to read him, it's no fun. In addition, it's arduous to look up every other word. But if you can get into the rhythm and flow of his work, it's a rich marvel of language. So, here are some tricks and tips to help us learn how to understand Shakespeare's words.</p>
-<p><a href="https://theconversation.com/how-to-read-shakespeare-for-pleasure-136409">How to Read Shakespeare for pleasure</a></p>
-   <div id="youtube-video"></div>
+  <div><h2>Why Shakespeare?</h2>
+  <p>Reading and knowing more about Shakespeare taps into a couple of things that are important for young adults.</p>
+  <p>First, a commitment to learning, particularly reading for pleasure.</p> 
+  <p>Second, if you find a love for Shakespeare, it can open a doorway to creative activities, such as working in the theater.</p>
+  <p>So, read on.</p>
+</div>
+  <div><h2>How to Read Shakespeare</h2></div>
+
+<div id="howtoread">
+<div>
+<p>Most of us come across Shakespeare for the first time in a setting not conducive to creating love for Shakespeare - in a classroom, assigned reading (very possibly an excerpt, rather than the whole thing), instead of in a performance that shows us the rhythm, the flow, the mood, the context. These plays were made to be performed, not published and read in what can be a very sterile environment.</p>
+<p>Shakespeare isn't easy for our modern ears. If you have not been taught how to read him, it's no fun. It's arduous to look up every other word.</p> 
+<p>But, if you can get into the rhythm and flow of his work, it can be marvelous. There's lots that's problematic (<a href="#criticism">see more below!</a>), but so much to unravel and luxuriate in. So, here are some tricks and tips to help us learn how to understand Shakespeare's words.</p></div>
+
+   <div>
    <br>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/CpJgyY073n0?si=dExlAIQA0drQJ8IE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <hr>
-  </div>
-
-<div id="book-adapts">
-  <h2>Book Adaptations</h2>
+   
+  </div> 
+  <div><p>And if reading is more your speed than a video, here's an article to help: <a href="https://theconversation.com/how-to-read-shakespeare-for-pleasure-136409">How to Read Shakespeare for pleasure</a></p></div><br>
+  <hr></div>
+  <div>
+  <h2>Movie Adaptations</h2></div>
   <!-- here, want to put in some flex items that can be a few together?-->
-  <p>There are a million and one Shakespeare adaptations - those that are more closely based on the plays, and those that put a different spin on things (and take liberties such as making something like <italic>Taming of the Shrew</italic> less utterly misogynistic and harsh - thank you, my fave, <italic>10 Things I Hate About You.</italic>.</p>
-  <hr>
+  <p>There are a million and one Shakespeare adaptations - those that are more closely based on the plays, and those that put a different spin on things (and take liberties such as making something like <italic>Taming of the Shrew</italic> less utterly misogynistic and harsh.)</p>
+  </div>
+<div class="resources">
+  <div class="movies">
+  <figure>
+ <a href="https://borrow.nypl.org/search/card?id=be3dee88-b2d4-5ff8-9c6e-ed1a949f4feb&entityType=FormatGroup"><img src="https://upload.wikimedia.org/wikipedia/en/9/95/10_Things_I_Hate_About_You_film.jpg" style="width: 10rem; height: 13.4rem;"></a>
+ <!--<figcaption class="fig-resources">Ten Things I Hate about You. The Taming of the Shrew is a vicious play, and this softens it and allows us to root thoroughly for Kat and Patrick.</figcaption> 
+ --></figure>
 </div>
+ <div class="movies">
+ <h4> Ten Things I Hate about You</h4>
+ <p><italic>The Taming of the Shrew</italic> is a vicious play, and this version softens it and allows us to root thoroughly for Kat and Patrick.</p>
+ </div>
+<br>
+<div class="movies">
+<figure>
+<a href="https://discover.bklynlibrary.org/item?b12133312"><img src="https://upload.wikimedia.org/wikipedia/en/b/b4/William_shakespeares_romeo_and_juliet_movie_poster.jpg" style="width: 10rem; height: 13.4rem"></a>
+<!--<figcaption class="fig-resources">William Shakespeare's Romeo + Juliet. This production is... not without its issues, and it's worth examining race and representation in this movie; it is also swoony, exciting, and captures the headiness of their love in a way that not many else manage. Also, <a href="https://en.wikipedia.org/wiki/Harold_Perrineau">Harold Perrineau</a> as Mercutio is glorious.</figcaption>
+-->
+</figure>
+</div>
+<div class="movies">
+  <h4>William Shakespeare's Romeo + Juliet </h4>
+  <p>This production is... not without its issues; it's worth examining race in this movie. Without ignoring that, this movie is also swoony, exciting, and captures the headiness of their love in a way that not many others manage. Also, <a href="https://en.wikipedia.org/wiki/Harold_Perrineau">Harold Perrineau</a> as Mercutio is glorious.</p>
+</div>
+</div>
+<div class="resources">
 <div id="podcasts">
 <h2>Podcasts on Shakespeare</h2>
-  <iframe src="https://art19.com/shows/the-stacks/episodes/243ec129-3308-43da-a907-2542892509bd/embed?theme=light-gray-custom" style="width: 75%; height: 200px; border: 0 none;" scrolling="no"></iframe>
+<div>  <iframe src="https://art19.com/shows/the-stacks/episodes/243ec129-3308-43da-a907-2542892509bd/embed?theme=light-gray-custom" style="width: 65%; height: 200px; border: 0 none;" scrolling="no"></iframe></div>
+<div><a href ="https://thestackspodcast.com">The Stacks</a> is a podcast whose host, Traci Thomas, came to Shakespeare through being a theater major and dancer. She's also a great critical thinker and explores race and gender throughout any work she reads. This interview with prominent scholar Farah Karim-Cooper is fascinating about how the Shakespearean and academic community responds to discussions of race.</div>
+  <br><img src="https://media.npr.org/images/podcasts/primary/icon_1094128694-218e56e196a175f929540bc48007680b275b8757.jpg?s=700&c=85&f=webp" style="width: 15%; height: 15%; border: 0 none;"><a href="https://www.npr.org/podcasts/1094128694/shakespeare-full-circle">Shakespeare Full Circle</a> from NPR: Looking at how the Shakespeare's language has become embedded in our own.
+  
   <hr>
-</div>
+</div></div>
+<div class="resources">
 <div id="criticism">
 <h2>Criticism</h2>
 <p>  Criticism about Shakespeare
    - Race
-  - Gender</p>
+   <p>
+  <img src="https://images2.penguinrandomhouse.com/cover/9780593489376" style="width: 15%; height: 15%"> The Great White Bard by Farah Karim-Cooper. <a href="https://www.theguardian.com/books/2023/may/06/the-great-white-bard-by-farah-karim-cooper-review-reclaiming-shakespeare">Review</a> here. </p>
+  <p> Gender</p>
+
 </div>
+</div>
+<div class="resources">
 <div id="gardens">
   <h2>Shakespeare Gardens</h2>
 
   Shakespeare Gardens! They're a thing!
-</div>
+</div></div>
+<div class="resources">
 <div id="insults">
   <h2>Shakespearean Insults</h2>
   <p>Want to take your insulting to another level? Stand out from the crowd? Shakespeare is famous for his insults! No matter what you're trying to say, it's likely that Shakespeare has an insult for you.</p>
 <p>You can, of course, discover these by reading the plays. But, if that's not working for you right now, you can always use one of the Internet's already made insult lists.</p> 
 <p>Alternatively, some ingenious people have put together random Shakespeare insult generators, putting together various insulting words found in Shakespeare, then into new combinations.</p>
 
-  </div>
-<div id="movies">
+  </div></div>
+  <div class="resources">
+<div id="books">
   <h2>Movie Adaptations</h2>
   <p>Shakespeare movies are great, whether straight adaptations or ones you might need to think about a little...</p>
-</div>
+</div></div>
     <script src="../scripts/shakespeare.js"></script>
 
 
