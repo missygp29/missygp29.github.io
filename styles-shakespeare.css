@@ -160,3 +160,53 @@ button {
   display: flex;
   flex-wrap: wrap;
 }
+
+.garden-pics:hover {
+    transform:scale(1.4)
+    }
+
+  /* YouTube stuff*/
+  .youtube-video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .youtube-video-container::after {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+  }
+  
+  .youtube-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* podcast player somehow doesn't seem to work - can't make it responsive*/
+
+/*  .podcast-player {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    align-items: center;
+  }
+  
+  .podcast-player::after {
+    display: block;
+    content: "";
+    padding-top: 65%;
+  }
+  
+  .podcast-player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+  }
+
+  */
