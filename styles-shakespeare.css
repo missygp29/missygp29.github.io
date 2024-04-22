@@ -220,3 +220,11 @@ button {
   .books-criticism img:hover{
     transform:scale(1.4)
   }
+
+  ul {
+    list-style-position: inside;
+  }
+  
+  li {
+padding: 5px;
+  }
