@@ -16,6 +16,27 @@ body {
 
 }
 
+.footer-box {
+  width: 5rem;
+  height: 3.5rem;
+  border: auto;
+  display: flex;
+  flex-direction: row;
+  max-width: 80%;
+  margin: 0 auto;
+  flex: 0 1 auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-item {
+  font-weight: bold;
+  padding: 1rem;
+  margin: 1rem; 
+  color: white;
+}
+
+
 /* lines between divs*/ 
   hr {
     width: 66%;
@@ -23,9 +44,9 @@ body {
     margin-right: auto;
     background: #095484;
     background-image: linear-gradient(to right, purple, fuchsia, plum, thistle, plum, fuchsia, purple);
-    height:.5rem;
-    margin-top:.5rem;
-    border:1rem;
+    height:.25rem;
+    margin-top:.25rem;
+    border:.5rem;
   }
 
 /*headings*/
@@ -65,28 +86,28 @@ h4 {
 /* hyperlinks */
 /* unvisited link */
 a:link {
-  color: maroon;
+  color: midnightblue;
   /* commented out for accessibility
   text-decoration:none;*/
 }
 
 /* visited link */
 a:visited {
-  color: rebeccapurple;
+  color: midnightblue;
       /* commented out for accessibility
   text-decoration:none;*/
 }
 
 /* mouse over link */
 a:hover {
-  color: fuchsia;
+  color: white;
       /* commented out for accessibility
   text-decoration:none;*/
 }
 
 /* selected link */
 a:active {
-  color: skyblue;
+  color: white;
       /* commented out for accessibility
   text-decoration:none;*/
 }
@@ -94,6 +115,14 @@ a:active {
 /*page layout - flexbox display (I hope)*/
 .resources {
   display:flex;
+  flex-direction: column;
+  align-items: center;
+  max-width:80%;
+  margin: 0 auto;
+}
+
+.podcast-player {
+  margin: 1rem;
 }
 
 /*MOVIE TABLE STYLING*/
@@ -128,6 +157,13 @@ td {
   text-align: center;
 
 }
+
+figcaption {
+  font-size: 0.6rem;
+  font-style: italic;
+  color:midnightblue;
+}
+
 /*Quote Generator Styling*/
 
 .quote-generator {
@@ -189,6 +225,9 @@ button {
     height: 100%;
   }
 
+  .podcast-player {
+    width: 80%:
+  }
   /* podcast player somehow doesn't seem to work - can't make it responsive*/
 
 /*  .podcast-player {
@@ -256,7 +295,7 @@ color: fuchsia;
 
 
   .grid-item a:link {
-    color: white;
+    color: midnight blue;
     text-decoration: none;
     /* commented out for accessibility
     text-decoration:none;*/
@@ -264,7 +303,7 @@ color: fuchsia;
   
   /* visited link */
  .grid-item a:visited {
-    color: white;
+    color: midnightblue;
     text-decoration: none;
         /* commented out for accessibility
     text-decoration:none;*/
@@ -285,3 +324,5 @@ color: fuchsia;
         /* commented out for accessibility
     text-decoration:none;*/
   }
+
+    

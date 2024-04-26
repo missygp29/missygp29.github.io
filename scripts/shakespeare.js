@@ -16,9 +16,13 @@ const shakespeareQuotes = [
     "\"I must tell you friendly in your ear, sell when you can, you are not for all markets.\" As You Like It, Act III scene v",
     "\"More of your conversation would infect my brain.\" Coriolanus, Act II, scene i",
     "\"The tartness of his face sours ripe grapes.\" The Comedy of Errors, Act V, scene iv",
-    "\"Virginity breeds mites, much like a cheese.\" All`s Well That Ends Well, Act I, scene i",
+    "\"Virginity breeds mites, much like a cheese.\" All\'s Well That Ends Well, Act I, scene i",
     "\"Out of my sight! Thou dost infect mine eyes.\" Richard III, Act I, scene ii",
-    "\"This royal throne of kings, this sceptred isle, This earth of majesty, this seat of Mars.\" Richard II,Act II, Scene i",
+    "\"This royal throne of kings, this sceptred isle, This earth of majesty, this seat of Mars.\" Richard II, Act II, scene i",
+    "\"Friendship is constant in all other things save in the office and affairs of love.\" Much Ado About Nothing, Act II, scene i",
+    "\"“Those friends thou hast, and their adoption tried, grapple them unto thy soul with hoops of steel.\" Hamlet, Act I, scene iii",
+    "\"Look like the innocent flower. But be the serpent under\'t.\" Macbeth, Act I, scene v",
+    "\"Out, out, brief candle! Life\'s but a walking shadow, a poor player, that struts and frets his hour upon the stage, and then is heard no more. It is a tale told by an idiot, full of sound and fury, signifying nothing.\" Macbeth, Act V, scene v",
 
     
 ];
