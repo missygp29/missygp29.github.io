@@ -39,7 +39,7 @@ body {
 
 /* lines between divs*/ 
   hr {
-    width: 66%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     background: #095484;
@@ -61,26 +61,26 @@ h1 {
   color: violet; 
   text-align: center;
   text-shadow: -1px -1px 0 navy, 1px -1px 0 navy, -1px 1px 0 navy, 1px 1px 0 navy;
-font-size: 3.125rem;
+font-size: 5.556vh;
 font-weight: bold;
 }
 
 h2 {
 color:blueviolet;
 font-weight:bold;
-font-size: 3rem;
+font-size: 5vh;
 }
 
 h3 {
 color:indigo;
 font-weight:bold;
-font-size: 2rem;
+font-size: 4vh;
 }
 
 h4 {
   color:midnightblue;
   font-weight: bolder;
-  font-size:1.9rem;
+  font-size:3vh;
   max-width:75%;
 }
 /* hyperlinks */
