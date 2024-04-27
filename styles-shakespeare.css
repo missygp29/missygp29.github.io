@@ -279,15 +279,15 @@ color: fuchsia;
     grid-auto-rows: 1fr;
     /*grid-template-columns: auto auto auto;*/
     background-color: indigo;
-    padding: 10px;
+    padding: 0.625rem;
     margin: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   
   .grid-item {
     background-color: fuchsia;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.8);
+    padding: 1.25rem;
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
