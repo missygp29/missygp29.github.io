@@ -275,7 +275,7 @@ color: fuchsia;
 
   .grid-container {
     display: grid;
-    row-gap: 1rem;
+    row-gap: 1%;
     grid-auto-rows: 1fr;
     /*grid-template-columns: auto auto auto;*/
     background-color: indigo;
@@ -288,7 +288,7 @@ color: fuchsia;
     background-color: fuchsia;
     border: 0.0625rem solid rgba(0, 0, 0, 0.8);
     padding: 1.25rem;
-    font-size: 1rem;
+    font-size: 1vh 1vw;
     font-weight: bold;
     text-align: center;
     color: white;
