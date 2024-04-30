@@ -270,7 +270,7 @@ button {
   
   li {
 padding: 5px;
-color: fuchsia;
+color: navy;
   }
 
   .grid-container {
@@ -328,3 +328,14 @@ color: fuchsia;
   }
 
     
+  /* unordered list for sources / all?*/
+
+  .list-div {
+    text-align: center;
+  }
+
+  ul.lists {
+    display: inline-block;
+  text-align: left;
+  color: navy;
+  }
