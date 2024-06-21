@@ -8,6 +8,7 @@ body {
   margin: 0 auto;
   text-align: center;
   max-width: 70%;
+  min-height: 100vh;
 }
 .intro {
   font-style:italic;
@@ -16,6 +17,13 @@ body {
 
 }
 
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+
+/*
 .footer-box {
   width: 5rem;
   height: 3.5rem;
@@ -35,7 +43,74 @@ body {
   margin: 1rem; 
   color: white;
 }
+*/
 
+/*New footer code*/
+
+/* Footer Styles */
+footer {
+  color: gray;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links li {
+  margin: 10px 20px;
+
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #f4f4f4;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  .footer-links {
+      flex-direction: column;
+  }
+
+  .footer-links li {
+      margin: 10px 0;
+  }
+}
+#home {
+  background-color: #FF00FF;
+  padding: 1rem;
+}
+
+#about {
+  background-color: #26FFFF;
+  padding: 1rem;
+}
 
 /* lines between divs*/ 
   hr {
@@ -339,3 +414,5 @@ color: navy;
   text-align: left;
   color: navy;
   }
+
+  
