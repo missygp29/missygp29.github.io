@@ -202,7 +202,7 @@ a:active {
 }
 
 /*MOVIE TABLE STYLING*/
-
+/*
 table {
   margin-left: auto;
  margin-right: auto;
@@ -239,6 +239,49 @@ figcaption {
   font-style: italic;
   color:midnightblue;
 }
+*/
+
+/* new table styling for movies */
+table {
+  border-collapse: separate; /* Use separate border model */
+  width: 100%;
+}
+th, td {
+  padding: 0; /* Remove default padding */
+  border: none; /* Remove default borders */
+}
+
+.oval-row {
+  background-color: whitesmoke; /* Light red background */
+  border: 2px solid indigo; /* Darker red border */
+  border-radius: 25px; /* Rounded corners to make it oval */
+  padding: 0.5rem; /* Padding inside the oval */
+  margin: 0.25rem 0; /* Space between rows */
+  display: flex; /* Flexbox layout for row content */
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center align items vertically */
+}
+.oval-row div {
+  padding: 8px; /* Padding inside each cell */
+  color: indigo;
+  font-size: larger;
+}
+th {
+  background-color: #f2f2f2; /* Background color for table header */
+  text-align: center; /* Center align text in header */
+}
+th {
+  background-color: #f2f2f2; /* Background color for table header */
+}
+/*tbody tr:nth-child(odd) {
+  background-color: whitesmoke; 
+  color: fuchsia;
+}
+tbody tr:nth-child(even) {
+  background-color: fuchsia; 
+  color: whitesmoke;
+}
+*/
 
 /*Quote Generator Styling*/
 
@@ -278,8 +321,9 @@ button {
 }
 
 .garden-pics:hover {
-    transform:scale(1.4)
+    transform:scale(1.2)
     }
+
 
   /* YouTube stuff*/
   .youtube-video-container {
@@ -337,7 +381,7 @@ button {
   }
 
   .books-criticism img:hover{
-    transform:scale(1.4)
+    transform:scale(1.2)
   }
 
   ul {
