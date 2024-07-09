@@ -396,8 +396,59 @@ color: navy;
   .grid-container {
     display: grid;
     row-gap: 1%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background-color: indigo;
+    padding: 0.625%;
+    margin: 1.5%;
+}
+
+.grid-item {
+    background-color: fuchsia;
+    border: 0.5rem solid snow;
+    padding: 5%;
+    font-size: calc(0.75vh + 0.75vw);
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    border-radius: 35%;
+}
+
+.grid-item a:link,
+.grid-item a:visited,
+.grid-item a:hover,
+.grid-item a:active {
+    color: midnightblue;
+    text-decoration: none;
+}
+
+.list-div {
+    text-align: center;
+}
+
+ul.lists {
+    display: inline-block;
+    text-align: left;
+    color: navy;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 2%;
+        margin: 2%;
+    }
+
+    .grid-item {
+        font-size: calc(1vh + 1vw);
+        padding: 10%;
+    }
+}
+/*
+  .grid-container {
+    display: grid;
+    row-gap: 1%;
     grid-auto-rows: repeat(auto-fit,1fr)
-    /*grid-template-columns: auto auto auto;*/
     background-color: indigo;
     padding: 0.625%;
     margin: 1.5%;
@@ -413,7 +464,7 @@ color: navy;
     font-weight: bold;
     text-align: center;
     color: white;
-    /*display: flex;*/
+   
     border-radius: 35%;
   }
 
@@ -422,31 +473,30 @@ color: navy;
     color: midnight blue;
     text-decoration: none;
     /* commented out for accessibility
-    text-decoration:none;*/
+    text-decoration:none;
   }
   
-  /* visited link */
+  /* visited link
  .grid-item a:visited {
     color: midnightblue;
     text-decoration: none;
-        /* commented out for accessibility
-    text-decoration:none;*/
+       
   }
   
-  /* mouse over link */
+  /* mouse over link 
   .grid-item a:hover {
     color: white;
     text-decoration: none;
         /* commented out for accessibility
-    text-decoration:none;*/
+    text-decoration:none;
   }
   
-  /* selected link */
+  /* selected link 
   .grid-item a:active {
     color: white;
     text-decoration: none;
         /* commented out for accessibility
-    text-decoration:none;*/
+    text-decoration:none;
   }
 
     
