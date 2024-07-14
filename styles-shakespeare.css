@@ -535,3 +535,9 @@ ul.lists {
       width: 80%; /* Adjust width for mobile view */
     }
   }
+
+  figcaption {
+    font-size: 0.6rem;
+    font-style: italic;
+    color:midnightblue;
+  }
