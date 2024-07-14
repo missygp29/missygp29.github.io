@@ -541,3 +541,50 @@ ul.lists {
     font-style: italic;
     color:midnightblue;
   }
+
+  .container-gif {
+    display: grid;
+    place-items: center;
+    height: 100vh; /* Full height of the viewport */
+  }
+  .Shakespeare-gif {
+    text-align: center;
+  }
+
+
+  .column-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .column {
+    flex: 1;
+    padding: 10px;
+  }
+  .column.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Shakespeare-gif {
+    width: 80%;
+  }
+
+  .container-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:80%;
+  }
+  .column {
+    flex: 1;
+    padding: 10px;
+  }
+  .column.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Shakespeare-gif {
+    width: 80%;
+  }
