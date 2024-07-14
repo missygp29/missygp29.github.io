@@ -588,3 +588,17 @@ ul.lists {
   .Shakespeare-gif {
     width: 80%;
   }
+
+    /* Media Query for smaller screens */
+    @media (max-width: 768px) {
+      .container-columns {
+        flex-direction: column;
+      }
+      .column {
+        flex: 1 1 100%;
+      }
+      .Shakespeare-gif {
+        width: 100%;
+      }
+    }
+  
