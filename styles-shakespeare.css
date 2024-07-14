@@ -512,4 +512,26 @@ ul.lists {
   color: navy;
   }
 
-  
+  /* shakespeare logo*/
+  .centered-figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .centered-figure img {
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+    max-width: 100%;
+    height: auto; /* Ensure the image maintains aspect ratio */
+  }
+
+  @media (max-width: 600px) {
+    .centered-figure img {
+      width: 80%; /* Adjust width for mobile view */
+    }
+  }
