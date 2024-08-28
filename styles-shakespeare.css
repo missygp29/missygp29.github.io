@@ -512,93 +512,76 @@ ul.lists {
   color: navy;
   }
 
-  /* shakespeare logo*/
-  .centered-figure {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 1rem;
-  }
+/* Container for two-column layout */
+.container-columns {
+  display: flex; /* Use flexbox for two columns */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 10px; /* Small gap between columns */
+  align-items: flex-start; /* Align items to the top */
+}
 
-  .centered-figure img {
-    width: 10rem;
-    height: 10rem;
-    padding: 1rem;
-    max-width: 100%;
-    height: auto; /* Ensure the image maintains aspect ratio */
-  }
+/* Styling for each column */
+.column {
+  flex: 1; /* Each column takes equal space */
+  padding: 1rem;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
 
-  @media (max-width: 600px) {
-    .centered-figure img {
-      width: 80%; /* Adjust width for mobile view */
-    }
-  }
+/* Specific styling for the right column */
+.right {
+  display: flex; /* Flexbox to align content */
+  align-items: flex-start; /* Align items to the start */
+  justify-content: center; /* Center content horizontally */
+}
 
-  figcaption {
-    font-size: 0.6rem;
-    font-style: italic;
-    color:midnightblue;
-  }
+/* Styling for the gif container */
+.right .Shakespeare-gif {
+  width: 100%; /* Full width of its container */
+  max-width: 500px; /* Set a max-width to control size */
+  margin: 0 auto; /* Center within the column */
+}
 
-  .container-gif {
-    display: grid;
-    place-items: center;
-    height: 100vh; /* Full height of the viewport */
-  }
-  .Shakespeare-gif {
-    text-align: center;
-  }
+/* Make the iframe responsive */
+.right .Shakespeare-gif iframe {
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+  display: block; /* Remove any inline display issues */
+  position: absolute; /* Absolute position to fill the container */
+  top: 0;
+  left: 0;
+}
 
+/* Change aspect ratio for larger image */
+.right .Shakespeare-gif > div {
+  width: 100%;
+  height: 0;
+  padding-bottom: 90%; /* Increase padding-bottom to enlarge iframe */
+  position: relative;
+}
 
-  .column-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .column {
-    flex: 1;
-    padding: 10px;
-  }
-  .column.right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .Shakespeare-gif {
-    width: 80%;
-  }
-
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
   .container-columns {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width:80%;
-  }
-  .column {
-    flex: 1;
-    padding: 10px;
-  }
-  .column.right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .Shakespeare-gif {
-    width: 80%;
+    flex-direction: column; /* Stack columns vertically */
+    gap: 0; /* Remove gap between stacked elements */
   }
 
-    /* Media Query for smaller screens */
-    @media (max-width: 768px) {
-      .container-columns {
-        flex-direction: column;
-      }
-      .column {
-        flex: 1 1 100%;
-      }
-      .Shakespeare-gif {
-        width: 100%;
-      }
-    }
-  
+  .column {
+    width: 100%; /* Full width for each column */
+    padding: 1rem 0; /* Adjust padding */
+  }
+
+  .right {
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+  }
+
+  .right .Shakespeare-gif {
+    width: 100%; /* Full width on smaller screens */
+    max-width: none; /* Remove max-width on smaller screens */
+  }
+
+  .right .Shakespeare-gif > div {
+    padding-bottom: 90%; /* Maintain size on smaller screens */
+  }
+}
