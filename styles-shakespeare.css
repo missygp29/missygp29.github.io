@@ -3,7 +3,6 @@
 body {
   background-color:snow;
   font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
   color:purple;
   margin: 0 auto;
   text-align: center;
@@ -347,7 +346,7 @@ button {
   }
 
   .podcast-player {
-    width: 80%:
+    width: 80%;
   }
   /* podcast player somehow doesn't seem to work - can't make it responsive*/
 
