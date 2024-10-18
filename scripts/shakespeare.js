@@ -23,6 +23,9 @@ const shakespeareQuotes = [
     "\"“Those friends thou hast, and their adoption tried, grapple them unto thy soul with hoops of steel.\" Hamlet, Act I, scene iii",
     "\"Look like the innocent flower. But be the serpent under\'t.\" Macbeth, Act I, scene v",
     "\"Out, out, brief candle! Life\'s but a walking shadow, a poor player, that struts and frets his hour upon the stage, and then is heard no more. It is a tale told by an idiot, full of sound and fury, signifying nothing.\" Macbeth, Act V, scene v",
+    "\"So soon foresaken? Young men's love then lies not truly in their hearts, but in their eyes.\" Romeo and Juliet, Act II, scene iii",
+    "\"Is love a tender thing? It is too rough, too rude, too boist'rous, and it pricks like thorn.\" Romeo and Juliet, Act I, scene iv",
+    "\"When good manners shall lie all in one or two men's hands, and they unwashed too, 'tis a foul thing.\" Romeo and Juliet, Act I, scene v",
 
     
 ];
